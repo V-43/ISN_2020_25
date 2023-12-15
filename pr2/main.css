@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300italic,regular,italic,500,600,700,800,900,900italic');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*:focus-within {
+    outline: none;
+}
+
+.loader {
+	border-top-color: #3498db;
+	-webkit-animation: spinner 1.5s linear infinite;
+	animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Webovio</title>
+</head>
+
+<body class="font-['Poppins'] overflow-x-hidden">
+  <div wire:loading class="js-spinner fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-gray-700 opacity-75 flex flex-col items-center justify-center">
+    <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mb-4"></div>
+    <h2 class="text-center text-white text-xl font-semibold">Загрузка страницы...</h2>
+  </div>
+
+  <div class="js-modal fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-gray-700 bg-opacity-25 flex flex-col items-center justify-center hidden">
+    <!-- Modal Overlay -->
+    <div class="fixed inset-0 px-2 z-10 overflow-hidden flex items-center justify-center">
+      <div class="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+      <!-- Modal Content -->
+      <div class="bg-white rounded-md shadow-xl overflow-hidden max-w-md w-full sm:w-96 md:w-1/2 lg:w-2/3 xl:w-1/3 z-50">
+        <!-- Modal Header -->
+        <div class="bg-[#5d6544] text-white px-4 py-2 flex justify-between">
+          <h2 class="text-lg font-semibold">Модалка</h2>
+        </div>
+        <!-- Modal Body -->
+        <div class="p-4">
+          <p>Макет был реализован Фофановым В.К.</p>
+          <p>Вариант № 6</p>
+        </div>
+        <!-- Modal Footer -->
+        <div class="border-t px-4 py-2 flex justify-end">
+          <button onclick="event.target.closest('.js-modal').classList.add('hidden')" class="px-3 py-1 bg-[#5d6544] text-white rounded-md w-full sm:w-auto"> OK </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="relative md:min-h-[810px] sm:min-h-[600px] min-h-[650px] sm:px-7 px-5 pt-6 bg-[url('/img/bg-header.jpg')] bg-center bg-cover">
+    <nav class="flex max-w-[1110px] mx-auto md:mb-[120px] mb-[80px] justify-between">
+      <a href="/" class="flex items-center sm:w-auto w-[140px]">
+        <img src="img/logo.png">
+      </a>
+      <button class="js-modal-open bg-white text-black rounded-full p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </nav>
+    <div class="text-white max-w-[1110px] mx-auto">
+      <p class="mb-3">A place where</p>
+      <h1 class="md:mb-7 mb-3 md:text-6xl text-5xl max-w-[616px] font-bold leading-tight">A creative agency for redemptive brands</h1>
+      <h3 class="max-w-[560px] mb-11">Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and enterprises.</h3>
+    </div>
+  </header>
+  <div class="sm:px-7 px-5 pb-24">
+    <div class="max-w-[1110px] mx-auto">
+      <div class="
+        relative
+        sm:-mt-20 
+        mt-0
+        lg:px-14
+        px-7
+        py-10
+        xl:w-[10000px]
+        w-full
+        shadow-[50px_50px_100px_0_rgba(0,0,0,0.15)]
+        bg-white
+      ">
+        <div class="
+          grid 
+          auto-cols-[1fr] 
+          gap-4
+          items-center
+          justify-center
+          max-w-[1110px]
+          sm:grid-cols-5
+          grid-cols-3
+          sm:grid-rows-1
+          grid-rows-2
+        ">
+          <img src="img/companies/16_Andrew-Porter-Logo.png" alt="Andrew Porter">
+          <img src="img/companies/17_Jalen-Rose-Leadership-Academy-Logo.png" alt="Jalen Rose">
+          <img src="img/companies/Wal.png" alt="Walbridge">
+          <img src="img/companies/Ideal.png" alt="Ideal">
+          <img src="img/companies/PhalenLeadership.png" alt="Phalen Leadership">
+        </div>
+      </div>
+    </div>
+    <div class="max-w-[1110px] mx-auto grid gap-4 lg:grid-rows-[auto] grid-rows-[auto_auto] auto-cols-fr lg:grid-cols-5 grid-cols-3 lg:mt-0 mt-20 items-end text-[#4d533c]">
+      <div class="pb-5 row-start-[span_1] row-end-[span_1] col-start-[span_3] col-end-[span_3] max-w-[462px]">
+        <p class="mb-3 text-sm">What we do for you</p>
+        <h2 class="md:text-4xl sm:text-2xl text-3xl md:mt-0 mt-3 mb-9 font-bold leading-normal">Strategy. Design Content. Technology<br>Development</h2>
+        <p class="mb-10 text-[#213842]/60">There’s no secret sauce, no wizard behind the curtain. What makes Aerolab tick is an interdisciplinary team with a framework that fosters candid collaboration.</p>
+      </div>
+      <div class="
+        lg:col-start-[span_2]
+        lg:col-end-[span_2]
+        col-start-[span_3]
+        col-end-[span_3]
+        row-start-[span_1]
+        row-end-[span_1]
+        shadow-[0_100px_100px_0_rgba(0,0,0,0.15)]
+        lg:px-10
+        px-5
+        lg:pt-28
+        pt-15
+        pb-11
+      ">
+        <h3 class="mb-12 italic text-2xl leading-snug">With More than 10 Years of Knowledge and Expertise we Design and Code Websites and Apps, We Build Brands and Help Them Succeed</h3>
+        <div class="flex sm:items-center items-start md:flex-row flex-col">
+          <img src="img/avatars/1.png" alt="ava1" class="shadow-[20px_25px_43px_rgba(0,0,0,0.18)] w-[90px] rounded-full">
+          <div class="sm:mt-0 mt-3">
+            <h3 class="sm:text-2xl text-lg font-bold mb-2">Genevieve Rodriquez</h3>
+            <p class="text-[#152934]">Founder & CEO, Webovio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lg:pt-36 pt-0 text-[#4d533c]">
+    <div class="flex max-w-[1170px] mx-auto lg:items-center lg:flex-row flex-col lg:mb-28 mb-14 lg:px-7 px-5">
+      <h2 class="lg:w-[325px] lg:mb-0 mb-3 sm:text-4xl text-3xl leading-normal font-bold">We Have Some Awesomr Project.</h2>
+      <p class="max-w-[560px] lg:pl-32 pl-0 text-[#213842]/60">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+    </div>
+    <div class="lg:mb-40 md:mb-56 mb-0 flex flex-wrap md:flex-row flex-col">
+      <div class="relative min-h-[550px] bg-[url('/img/other/1.png')] bg-center bg-cover md:w-1/2 w-full">
+        <div class="shadow-[50px_50px_100px_rgba(0,0,0,0.15)] absolute left-auto top-auto -bottom-16 lg:-right-10 right-0 bg-white rounded-lg p-9">
+          <p class="max-w-[390px] mb-6 italic text-[#213842]/60">“In my history of working with trade show vendors, I can honestly say that there is not one company that I've ever worked with that has better service than Exhibit Systems.”</p>
+          <div class="flex sm:items-center">
+            <img src="img/avatars/2.png" alt="ava2" class="w-[46px] shadow-[20px_25px_43px_rgba(0,0,0,0.18)] rounded-full">
+            <div class="pl-4">
+              <h3 class="mb-0.5 font-bold">Angel Armstrong</h3>
+              <p class="text-[#152934]">Founder & CEO, Google</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center md:w-1/2 w-full md:pt-0 pt-28 lg:pl-24 pl-7">
+        <div class="w-full max-w-[500px] pr-7">
+          <h2 class="mb-7 text-4xl leading-snug font-bold">The wall new <br>Balenciaga.com</h2>
+          <p class="md:mb-28 mb-10 text-[#213842]/60">This article is floated online with an aim to help you find the best dvd printing solution.<br><br>Dvd printing is an important feature used by large and small DVD production houses to print information on DVDs.</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:mb-40 md:mb-56 mb-0 flex flex-wrap md:flex-row flex-col">
+      <div class="flex items-center md:w-1/2 w-full md:pt-0 pt-28 lg:pl-24 pl-7">
+        <div class="w-full max-w-[530px] ml-auto pr-28">
+          <h2 class="mb-7 text-4xl leading-snug font-bold">Is this the future of<br>3D model?</h2>
+          <p class="md:mb-28 mb-10 text-[#213842]/60">While it was just a TV show, that little speech at the beginning of the original Star Trek show really did do a good job of capturing our feelings about space.<br><br>It is those feelings that drive our love of astronomy and our desire to learn more and more about it.</p>
+        </div>
+      </div>
+      <div class="relative min-h-[550px] bg-[url('/img/other/2.png')] bg-center bg-cover md:w-1/2 w-full md:mt-0 mt-14">
+        <div class="
+          shadow-[50px_50px_100px_rgba(0,0,0,0.15)]
+          absolute
+          md:-left-10
+          left-0
+          top-auto
+          right-auto
+          -bottom-9
+          bg-white
+          rounded-lg
+          p-9
+          block_left
+        ">
+          <p class="max-w-[390px] mb-6 italic text-[#213842]/60">“I know they are going to be honest with me. I am not going to get a subpar product; I know it is going to be good. That is the number one advantage of working with Exhibit Systems.</p>
+          <div class="flex sm:items-center">
+            <img src="img/avatars/3.png" alt="ava3" class="w-[46px] shadow-[20px_25px_43px_rgba(0,0,0,0.18)] rounded-full">
+            <div class="pl-4">
+              <h3 class="mb-0.5 font-bold">Lina Hart</h3>
+              <p class="text-[#152934]">Founder & CEO, Jico</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:mb-40 md:mb-56 mb-0 flex flex-wrap md:flex-row flex-col">
+      <div class="relative min-h-[550px] bg-[url('/img/other/3.png')] bg-center bg-cover md:w-1/2 w-full md:mt-0 mt-36">
+        <div class="shadow-[50px_50px_100px_rgba(0,0,0,0.15)] absolute left-auto top-auto -bottom-16 lg:-right-10 right-0 bg-white rounded-lg p-9">
+          <p class="max-w-[390px] mb-6 italic text-[#213842]/60">“Exhibit Systems is not a provider. They are not a supplier. They are a partner with expertise in making trade shows effective.”</p>
+          <div class="flex sm:items-center">
+            <img src="img/avatars/4.png" alt="ava4" class="w-[46px] shadow-[20px_25px_43px_rgba(0,0,0,0.18)] rounded-full">
+            <div class="pl-4">
+              <h3 class="mb-0.5 font-bold">Eunice Oliver</h3>
+              <p class="text-[#152934]">Founder & CEO, Zeem</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center md:w-1/2 w-full md:pt-0 pt-28 lg:pl-24 pl-7">
+        <div class="w-full max-w-[500px] pr-7">
+          <h2 class="mb-7 text-4xl leading-snug font-bold">Is this the future of <br>Online Booking</h2>
+          <p class="md:mb-28 mb-10 text-[#213842]/60">You should be able to find several indispensable facts about motivation in the following paragraphs. <br><br>If there’s at least one fact you didn’t know before, imagine the difference it might make.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="md:mt-0 mt-36 mx-auto max-w-[1110px] px-7 text-[#4d533c]">
+    <h2 class="sm:text-4xl text-3xl md:mb-20 mb-10 max-w-[610px] font-bold">Deation & Evaluation - Best Way to Kick off Your Product Idea</h2>
+    <div class="
+      grid
+      gap-x-4
+      md:gap-y-4
+      gap-y-6
+      auto-cols-fr
+      lg:grid-cols-4
+      sm:grid-cols-2
+      grid-cols-1
+      lg:grid-rows-[auto]
+      sm:grid-rows-[repeat(2,_auto)]
+      grid-rows-[repeat(4,_auto)]
+    ">
+      <div class="relative md:px-8 px-0 pb-4">
+        <h3 class="uppercase text-2xl mt-5 mb-2.5 leading-normal font-medium">Product Design Sprint</h3>
+        <p class="md:mb-14 mb-5 text-[#213842]/60 text-sm leading-normal">A five-day workshop that will help you answer crucial business questions</p>
+      </div>
+      <div class="relative md:px-8 px-0 pb-4">
+        <h3 class="uppercase text-2xl mt-5 mb-2.5 leading-normal font-medium">Scoping Session</h3>
+        <p class="md:mb-14 mb-5 text-[#213842]/60 text-sm leading-normal">A workshop aimed at shaping your business idea, answering questions regarding project planning</p>
+      </div>
+      <div class="relative md:px-8 px-0 pb-4">
+        <h3 class="uppercase text-2xl mt-5 mb-2.5 leading-normal font-medium">UX <br>Review</h3>
+        <p class="md:mb-14 mb-5 text-[#213842]/60 text-sm leading-normal">An evaluation which will help you radically improve your product.</p>
+      </div>
+      <div class="relative md:px-8 px-0 pb-4">
+        <h3 class="uppercase text-2xl mt-5 mb-2.5 leading-normal font-medium">Code <br>Review</h3>
+        <p class="md:mb-14 mb-5 text-[#213842]/60 text-sm leading-normal">Do you know what one of the key secrets of success <br>is what makes people successful in business</p>
+      </div>
+    </div>
+  </div>
+  <footer class="relative bg-[url('/img/bg-footer.jpg')] bg-cover sm:px-7 px-5 sm:pt-72 pt-64 pb-7 lg:mt-72 md:mt-40 mt-24 text-[#4d533c]">
+    <div class="absolute lg:-top-44 md:-top-20 -top-7 left-0 right-0 bottom-auto">
+      <div class="lg:min-h-[342px] md:min-h-[290px] sm:min-h-[230px] min-h-[220px] relative max-w-[1110px] mx-auto">
+        <div class="absolute left-auto top-0 right-0 bottom-0 bg-white shadow-[50px_130px_100px_rgba(0,0,0,0.15)] lg:w-[10000px] lg:pt-16 w-full pt-10 px-7">
+          <div class="max-w-[1110px] ml-auto">
+            <h2 class="max-w-[700px] md:mb-12 mb-5 lg:text-6xl md:text-5xl sm:text-4xl text-2xl leading-normal font-bold">Let’s make something amazing together.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-[1110px] mx-auto">
+      <div class="flex justify-between sm:flex-row flex-col max-w-[450px]">
+        <div class="sm:mb-0 mb-5">
+          <p class="text-[#b6c197] mb-4">Phone</p>
+          <a href="tel:+3250312832" class="text-[#fff] font-bold mb-3">+32 50 31 28 32</a>
+        </div>
+        <div class="sm:mb-0 mb-5">
+          <p class="text-[#b6c197] mb-4">Address</p>
+          <p class="text-[#fff] font-bold mb-3">491 Merlin Crest Suite 963</p>
+        </div>
+      </div>
+      <div class="h-[1px] bg-[#5d6544] sm:mt-12 sm:mb-14 my-5"></div>
+      <div class="flex lg:flex-row flex-col">
+        <div class="flex-[1]">
+          <div class="
+            grid
+            auto-cols-fr
+            gap-y-4
+            md:gap-x-16
+            sm:gap-x-8
+            gap-x-5
+            md:grid-rows-[auto]
+            grid-rows-[auto,_auto]
+            lg:grid-cols-4
+            md:grid-cols-3
+            sm:grid-cols-2
+            grid-cols-1
+            lg:mb-0
+            mb-10
+          ">
+            <div class="footer_col">
+              <h4 class="uppercase text-[#fff] font-semibold lg:mb-7 mb-2.5 mt-2.5">Services</h4>
+              <a href="#" class="block text-[#b6c197] mb-4">Strategy Design</a>
+              <a href="#" class="block text-[#b6c197] mb-4">Product Design</a>
+              <a href="#" class="block text-[#b6c197] mb-4">Content Strategy</a>
+              <a href="#" class="block text-[#b6c197] mb-4">Brand Strategy</a>
+              <a href="#" class="block text-[#b6c197] mb-4">Development</a>
+            </div>
+            <div class="footer_col">
+              <h4 class="uppercase text-[#fff] font-semibold lg:mb-7 mb-2.5 mt-2.5">Help And Advice</h4>
+              <a href="#" class="block text-[#b6c197] mb-4">How it works</a>
+              <a href="#" class="block text-[#b6c197] mb-4">Contact Support</a>
+              <a href="#" class="block text-[#b6c197] mb-4">Privacy Policy</a>
+              <a href="#" class="block text-[#b6c197] mb-4">FAQ</a>
+            </div>
+            <div class="footer_col">
+              <h4 class="uppercase text-[#fff] font-semibold lg:mb-7 mb-2.5 mt-2.5">Company</h4>
+              <a href="#" class="block text-[#b6c197] mb-4">About</a>
+              <a href="#" class="block text-[#b6c197] mb-4">Blog</a>
+              <a href="#" class="block text-[#b6c197] mb-4">Contacts</a>
+              <a href="#" class="block text-[#b6c197] mb-4">Jobs</a>
+            </div>
+            <div class="w-[1px] bg-[#5d6544]"></div>
+          </div>
+        </div>
+        <div class="sm:w-[322px] w-auto">
+          <h4 class="uppercase text-[#fff] font-semibold lg:mb-7 mb-2.5 mt-2.5">Get in Touch</h4>
+          <p class="text-[#b6c197] lg:mb-0 mb-4">Feel free to get in touch with us vai email</p>
+          <p class="mt-5 mb-6 text-[#fff] font-bold sm:text-2xl text-lg">info.webovio@gmail.com</p>
+          <div class="flex w-[170px] justify-between">
+            <a href="#" class="js-modal-open flex w-[33px] h-[33px] items-center justify-center rounded-full bg-[#444a34] hover:bg-[#ffd723]" style="transition: background-color 350ms ease;"></a>
+            <a href="#" class="js-modal-open flex w-[33px] h-[33px] items-center justify-center rounded-full bg-[#444a34] hover:bg-[#ffd723]" style="transition: background-color 350ms ease;"></a>
+            <a href="#" class="js-modal-open flex w-[33px] h-[33px] items-center justify-center rounded-full bg-[#444a34] hover:bg-[#ffd723]" style="transition: background-color 350ms ease;"></a>
+            <a href="#" class="js-modal-open flex w-[33px] h-[33px] items-center justify-center rounded-full bg-[#444a34] hover:bg-[#ffd723]" style="transition: background-color 350ms ease;"></a>
+          </div>
+        </div>
+      </div>
+      <div class="h-[1px] mt-14 mb-6 bg-[#5d6544] md:mx-0 -mx-8"></div>
+      <div class="flex max-w-[1110px] mx-auto justify-between md:items-center items-start md:flex-row flex-col">
+        <a href="#" class="sm:inline-block flex sm:w-auto w-[140px] items-center">
+          <img src="img/logo.png" alt="">
+        </a>
+        <p class="md:mt-0 mt-5 text-[#b6c197]">© 2020@webovio. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const modal = document.querySelector('.js-modal');
+    document.querySelectorAll('.js-modal-open').forEach((btn) => btn.addEventListener('click', () => modal.classList.remove('hidden')));
+    setTimeout(() => document.querySelector('.js-spinner').classList.add('hidden'), 543);
+  </script>
+</body>
+
+</html>
